@@ -13,7 +13,7 @@
             <ul>                <li><a href="index.html">Home</a></li>
 
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Collaborate</a></li>
+                <li><a href="https://github.com/namansingh1314/CP-reminder" target="_blank">Collaborate</a></li>
             </ul>
         </nav>
     </div>
@@ -38,16 +38,26 @@
                     <div class="timer" id="codechef-long">00:00:00:00</div>
                 </div>
                 <div class="contest">
+                    <p>Starters</p>
+                    <div class="timer" id="codechef-starters">00:00:00:00</div>
+                </div>
+                <div class="contest">
                     <p>Cook-Off</p>
                     <div class="timer" id="codechef-cookoff">00:00:00:00</div>
                 </div>
+                
             </div>
             <div class="box" onclick="window.location.href='https://codeforces.com/contests'">
                 <h2>Codeforces</h2>
                 <div class="contest">
-                    <p>Codeforces Round</p>
-                    <p>Div. 2</p>
-                    <div class="timer" id="codeforces-round">00:00:00:00</div>
+                    <p>Codeforces Round div 3</p>
+                   
+                    <div class="timer" id="codeforces-round 3">00:00:00:00</div>
+                </div>
+                <div class="contest">
+                    <p>Codeforces Round div 4</p>
+                   
+                    <div class="timer" id="codeforces-round 4">00:00:00:00</div>
                 </div>
             </div>
             <div class="box" onclick="window.location.href='https://www.geeksforgeeks.org/events/rec/gfg-weekly-coding-contest'">
@@ -56,6 +66,10 @@
                     <p>Weekly Contest</p>
                     <div class="timer" id="gfg-weekly">00:00:00:00</div>
                 </div>
+                <div class="contest">
+                    <p>Biweekly Contest</p>
+                    <div class="timer" id="gfg-biweekly">00:00:00:00</div>
+                </div>
             </div>
         </div>
         
@@ -63,7 +77,25 @@
     <div class="subscribe-container">
         <h1>Want to get notified?</h1>
         <form id="subscribeForm">
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+<input 
+    type="text" 
+    id="phone" 
+    name="phone" 
+    placeholder="Enter your phone number" 
+    required 
+    style="
+        text-align: center; /* Centers the text (including placeholder) horizontally */
+        background-color: #333; /* Dark background to match theme */
+        border: 1px solid #444; /* Slightly lighter border */
+        color: #fff; /* Text color */
+        padding: 10px; /* Padding inside the input */
+        border-radius: 4px; /* Rounded corners */
+        width: 100%; /* Full width */
+        max-width: 300px; /* Limit width */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        font-size: 1em; /* Font size */
+    "
+>
             <button type="submit">Subscribe</button>
         </form>
         <p id="responseMessage"></p>
