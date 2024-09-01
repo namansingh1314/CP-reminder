@@ -1,0 +1,236 @@
+/* Existing Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.topbar {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #FF0000;
+}
+
+h1, .navbar ul li a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+h1:hover, .navbar ul li a:hover {
+    color: #FF0000;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #FF0000;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    justify-items: center;
+}
+
+.box {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: #FF0000;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.4);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contest {
+    margin-top: 20px;
+}
+
+.timer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.timer span {
+    background-color: #0a0a0a; /* Black background for each number */
+    padding: 10px 5px; /* Padding around each number */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin: 0 2px; /* Space between each number */
+    color: #ff0505; /* White text color */
+}
+
+.timer span.day {
+    background-color: #333; /* Darker background for the day field */
+}
+
+/* Subscribe Section Styles */
+.subscribe-container {
+    background-color: #1a1a1a; /* Match background with .box */
+    color: #fff; /* Text color */
+  
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+
+
+
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    max-width: 600px; /* Increase max-width for better layout */
+    margin: 0 auto; /* Center the container horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe-container h1 {
+    margin-bottom: 1rem;
+    color: #fff; /* Heading color */
+}
+
+.subscribe-container form {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between input and button */
+}
+
+.subscribe-container input[type="email"] {
+    background-color: #333; /* Dark background to match theme */
+    border: 1px solid #444; /* Slightly lighter border */
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px; /* Limit width */
+    box-sizing: border-box;
+}
+
+.subscribe-container button {
+    background-color: #FF0000; /* Button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    width: auto; /* Button width based on content */
+}
+
+.subscribe-container button:hover {
+    background-color: #e60000; /* Darker shade on hover */
+}
+
+.subscribe-container #responseMessage {
+    margin-top: 1rem;
+    color: #fff; /* Default text color for response messages */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .box-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .timer {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .subscribe-container {
+        padding: 15px;
+        max-width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .subscribe-container form {
+        flex-direction: column; /* Stack input and button vertically on small screens */
+    }
+
+    .subscribe-container input[type="email"], 
+    .subscribe-container button {
+        width: 100%; /* Full width inputs and buttons */
+    }
+}

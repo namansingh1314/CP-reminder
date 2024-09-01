@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP Contest Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topbar">
+        <h1>CP Contest Reminder</h1>
+        <nav class="navbar">
+            <ul>                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Collaborate</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="box-container">
+            <div class="box" onclick="window.location.href='https://leetcode.com/contest/'">
+                <h2>LeetCode</h2>
+                <div class="contest">
+                    <p>Biweekly Contest</p>
+                    <div class="timer" id="leetcode-biweekly">00:00:00:00</div>
+                </div>
+                <div class="contest">
+                    <p>Weekly Contest</p>
+                    <div class="timer" id="leetcode-weekly">00:00:00:00</div>
+                </div>
+            </div>
+            <div class="box" onclick="window.location.href='https://www.codechef.com/contests'">
+                <h2>CodeChef</h2>
+                <div class="contest">
+                    <p>Long Challenge</p>
+                    <div class="timer" id="codechef-long">00:00:00:00</div>
+                </div>
+                <div class="contest">
+                    <p>Cook-Off</p>
+                    <div class="timer" id="codechef-cookoff">00:00:00:00</div>
+                </div>
+            </div>
+            <div class="box" onclick="window.location.href='https://codeforces.com/contests'">
+                <h2>Codeforces</h2>
+                <div class="contest">
+                    <p>Codeforces Round</p>
+                    <p>Div. 2</p>
+                    <div class="timer" id="codeforces-round">00:00:00:00</div>
+                </div>
+            </div>
+            <div class="box" onclick="window.location.href='https://www.geeksforgeeks.org/events/rec/gfg-weekly-coding-contest'">
+                <h2>GeeksforGeeks</h2>
+                <div class="contest">
+                    <p>Weekly Contest</p>
+                    <div class="timer" id="gfg-weekly">00:00:00:00</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="subscribe-container">
+        <h1>Want to get notified?</h1>
+        <form id="subscribeForm">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
